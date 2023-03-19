@@ -1,0 +1,19 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "hardhat": "^2.13.0"
+  },
+  "scripts": {
+    "start": "node --experimental-specification-flags index.js",
+    "compile": "node --experimental-specification-flags compile.js"
+  },
+  "dependencies": {
+    "create-react-app": "^5.0.1",
+    "dotenv": "^16.0.3",
+    "ganache-cli": "^6.12.2",
+    "mocha": "^10.2.0",
+    "solc": "^0.8.19",
+    "web3": "^1.8.2"
+  }
+}
