@@ -1,4 +1,4 @@
-# Decentralised Lottery Web Application
+# Decentralized Lottery Web Application
 
 The Lottery Dapp is a web application that operates in a decentralised manner, allowing participants to join by sending a specific amount of ether to the smart contract. 
 The contract owner can then use a function to select a winner at random from all the participants and send the prize money to the winner's address.  
