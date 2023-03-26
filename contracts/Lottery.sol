@@ -16,13 +16,11 @@ contract lottery {
     function random() private view returns(uint256){
         return uint(keccak256(abi.encodePacked(block.difficulty, block.timestamp, players )));
     }
-    function pickWinner() public restricted returns(address) {
-        
+    function pickWinner() public restricted {
         uint index = random() % players.length;
         payable(players[index]).transfer(address(this).balance);
-        address winner = players[index];
         players = new address[](0);
-        return winner;
+
     }
     modifier restricted(){
         require(msg.sender == manager,"lottery: Only manager is allowed");
